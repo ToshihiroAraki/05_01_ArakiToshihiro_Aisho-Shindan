@@ -50,7 +50,7 @@ public class kadai_java_01 {
                     }else{
                         //自分の回答と対象者の回答の差を絶対値にして満点(4)から引いてスコアにする。
                         scoreSum[list.get(i)] = 4 - Math.abs(myAnswer[list.get(i)] - answer[list.get(i)]);
-                        if(answer[5] == 4){//プログラミングが好きだと答えた場合のみ以下実行
+                        if((list.get(i) == 5) && (answer[5] == 4)){//プログラミングが好きだと答えた場合のみ以下実行
                             System.out.println("以下のうち一番好きな言語を選択してください");
                             System.out.println("1.java 2.python 3.php 4.javascript");
                             answer[6] = sc.nextInt();
